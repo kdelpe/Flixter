@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Flixter
 //
-//  Created by Rosa Calosso on 9/7/21.
+//  Created by Kervens Delpe on 9/7/21.
 //
 
 import UIKit

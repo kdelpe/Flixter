@@ -2,7 +2,7 @@
 //  MovieCell.swift
 //  Flixter
 //
-//  Created by Rosa Calosso on 9/8/21.
+//  Created by Kervens Delpe on 9/8/21.
 //
 
 import UIKit
