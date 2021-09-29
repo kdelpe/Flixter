@@ -126,6 +126,7 @@
                                         <size key="customSize" width="200" height="254"/>
                                         <connections>
                                             <outlet property="posterView" destination="SdH-1b-ZIZ" id="X5w-fh-0Wc"/>
+                                            <segue destination="Tlw-ul-UWi" kind="show" id="aIu-fT-Qkg"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -187,7 +188,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W9d-x1-vdq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-462" y="1160"/>
+            <point key="canvasLocation" x="-462.31884057971018" y="1159.8214285714284"/>
+        </scene>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="lG9-eh-7pb">
+            <objects>
+                <viewController id="Tlw-ul-UWi" customClass="MovieDetailViewController" customModule="Flixter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c0F-kl-SZn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrA-J3-r6B">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I4z-re-L9Y">
+                                <rect key="frame" x="12" y="191" width="112" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCj-fp-xiG">
+                                <rect key="frame" x="132" y="310" width="262" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSK-0n-CbX">
+                                <rect key="frame" x="12" y="395" width="382" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pvv-am-B8l"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bS2-sf-gtK"/>
+                    <connections>
+                        <outlet property="backdropView" destination="zrA-J3-r6B" id="N60-ct-ecx"/>
+                        <outlet property="posterView" destination="I4z-re-L9Y" id="6es-xD-owa"/>
+                        <outlet property="synopsisLabel" destination="qSK-0n-CbX" id="VRr-q8-4ay"/>
+                        <outlet property="titleLabel" destination="UCj-fp-xiG" id="ZyV-B4-L4Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8LK-Qd-Puo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663.768115942029" y="1144.4196428571429"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="5JH-gb-t2v">
@@ -234,6 +281,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
